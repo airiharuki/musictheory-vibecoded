@@ -28,7 +28,7 @@ Look, we’ve all been there. Staring at the piano roll at 3am, trying to make a
 
 Build entire chord progressions up to 16 bars. Set your BPM, pick your time signature (yes, even 7/8 if you’re one of *those* people), and export the whole thing as MIDI.
 
-No more playing each chord into your DAW one by one like a caveman. Just click, export, drag into Ableton, done.
+No more playing each chord into your DAW one by one like a caveman. Just click, export, drag into your DAW, done.
 
 ### 🌓 It Looks Pretty Too
 
@@ -38,7 +38,7 @@ No more playing each chord into your DAW one by one like a caveman. Just click, 
 
 ## 🚀 Try It
 
-[**Click here to mess around with it →**](#) *(Add your link)*
+[**Click here to mess around with it →**](#) *(I forgot to deploy it)*
 
 ## 🛠️ What’s It Made With?
 
@@ -51,7 +51,7 @@ No more playing each chord into your DAW one by one like a caveman. Just click, 
 
 ```bash
 # Get the code
-git clone https://github.com/yourusername/chord-generator.git
+git clone https://github.com/airiharuki/musictheory-vibecoded.git
 cd chord-generator
 
 # Install the stuff
@@ -162,3 +162,5 @@ Project: <https://github.com/airiharuki/musictheory-vibecoded>
 **Made with ❤️, caffeine, and questionable life choices**
 
 *P.S. - If you made it this far in the README, you’re the real MVP*
+
+*"I have severe depression"*
