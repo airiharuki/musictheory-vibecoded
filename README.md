@@ -164,7 +164,7 @@ Hell yeah! We love contributions. Here's how to get involved:
 
 ### 🐛 Found a Bug?
 
-1. Check if someone already reported it in [Issues](https://github.com/yourusername/harmonic-studio/issues)
+1. Check if someone already reported it in [Issues](https://github.com/airiharuki/musictheory-vibecoded/issues)
 2. If not, open a new issue with:
    - What you expected to happen
    - What actually happened
