@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-}
+  output: 'export',
+  basePath: '/musictheory-vibecoded',
+  assetPrefix: '/musictheory-vibecoded/',
+};
 
-export default nextConfig
+module.exports = nextConfig;
