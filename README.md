@@ -10,7 +10,7 @@ A music theory tool that actually doesn't suck. Calculate pitch shifts, generate
 
 ### 🎹 Pitch & Scale Calculator
 
-Ever had a fire sample in C but your beat's in F# Minor Phrygian Dominant? This tells you exactly how many semitones to pitch that thing. No more trial and error, no more "does +7 sound right?" Just facts.
+Ever had a fire sample in C but your beat's in F# Minor Phrygian Dominant? This tells you exactly how many semitones to pitch that thing. No more trial and error, no more "does +7 sound right?" Just facts™.
 
 Works with 14 different scales because sometimes you're feeling Dorian, sometimes you're feeling Phrygian, and sometimes you just want that Blues scale energy.
 
@@ -25,7 +25,7 @@ Look, we've all been there. Staring at the piano roll at 3am, trying to make a c
 - 🎛️ 12 chord presets (Major, Minor, the weird ones, all of it)
 - 👆 Click notes manually if you're feeling creative
 - 🎲 **Random button** for when your brain is fried and you need inspiration
-- 🔒 **Scale lock** so your random chords actually stay in key (revolutionary, I know)
+- 🔒 **Scale lock** so your random chords actually stay in key (revolutionary™, I know)
 - 🔊 Play button that goes "beep boop" so you can hear if it slaps
 
 ### 🎼 Progression Builder
@@ -60,12 +60,12 @@ Paste a YouTube link, get the key, BPM, and time signature. That's it. That's th
 
 *Note: Currently uses simulated analysis. For production, you'd want to hook this up to a real audio analysis API.*
 
-### 🌓 It Looks Pretty Too
+### 🌓 It Looks Pretty Too™
 
-- 🌙 Dark mode for late night sessions (galaxy vibes with that indigo-purple-pink gradient)
-- ☀️ Light mode for when you open your laptop at a coffee shop (soft rose aesthetic)
+- 🌙 Dark mode for late night sessions (galaxy vibes™ with that indigo-purple-pink gradient)
+- ☀️ Light mode for when you open your laptop at a coffee shop (aesthetic™)
 - ✨ Smooth-ass theme transitions that don't just snap between modes
-- 🔄 Sun/moon icon does a little spin when you toggle (because details matter)
+- 🔄 Sun/moon icon does a little spin when you toggle (because details matter™)
 
 ## 🚀 Try It
 
@@ -77,7 +77,7 @@ Just clone it and run it. Or click the deploy link if there is one.
 - ⚛️ React 19 (living on the edge)
 - 🎨 Tailwind CSS 4 (utility classes go brrrr)
 - 🔊 Web Audio API (pure sine waves, chef's kiss)
-- 🎹 Homemade MIDI generator (no libraries, we built different)
+- 🎹 Homemade MIDI generator (no libraries, we built different™)
 - 💎 Glassmorphism everywhere (because 2024 called and we answered)
 
 ## 📦 How to Run This Locally
