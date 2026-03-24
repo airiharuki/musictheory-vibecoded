@@ -2,7 +2,7 @@
 
 A music theory tool that actually doesn't suck. Calculate pitch shifts, generate chords, build progressions, analyze YouTube tracks, and stare at a Circle of Fifths that actually looks good—all while vibing at A=432Hz because we're fancy like that.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Next.js](https://img.shields.io/badge/next.js-16-black.svg)
 ![Vibes](https://img.shields.io/badge/vibes-immaculate-ff69b4.svg)
 
