@@ -144,9 +144,9 @@ If this helped you make something cool, that’s dope. Drop a star ⭐ if you’
 
 Got questions? Found a bug? Just want to show me what you made with this?
 
-**[Your Name]** - [@yourhandle](https://twitter.com/yourhandle)
+**[Your Name]** - [@yourhandle](https://twitter.com/airiharuki0)
 
-Project: <https://github.com/yourusername/chord-generator>
+Project: <https://github.com/airiharuki/musictheory-vibecoded>
 
 -----
 
