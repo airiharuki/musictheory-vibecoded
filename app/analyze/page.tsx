@@ -268,6 +268,16 @@ export default function AnalyzePage() {
             >
               Analyzer
             </div>
+            <Link
+              href="/stems"
+              className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
+                isDarkMode
+                  ? "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900"
+              }`}
+            >
+              Stems
+            </Link>
           </div>
 
           <button
