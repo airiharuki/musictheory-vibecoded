@@ -161,18 +161,54 @@ export default function AnalyzePage() {
     setError(null)
     setResult(null)
 
-    const videoId = extractVideoId(url.trim())
-    if (!videoId) {
-      setError("Please enter a valid YouTube URL or video ID")
+    if (!url.trim()) {
+      setError("Please enter a valid YouTube or SoundCloud URL")
       return
     }
 
     setIsAnalyzing(true)
     try {
-      const analysisResult = await simulateAnalysis(videoId)
+      // Call backend analyze endpoint
+      const response = await fetch("/api/analyze-audio", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ url: url.trim() })
+      })
+
+      if (!response.ok) {
+        const errorData = await response.json()
+        throw new Error(errorData.detail || "Failed to analyze audio")
+      }
+
+      const data = await response.json()
+      
+      // Map backend response to our interface
+      const analysisResult = {
+        analysis: {
+          key: data.key,
+          scale: data.key.includes("m") ? "Minor" : "Major",
+          camelot: data.camelot,
+          bpm: data.bpm,
+          bpmConfidence: data.bpm_confidence,
+          timeSignature: data.time_signature,
+          timeSignatureConfidence: 70,
+          keyConfidence: data.key_confidence,
+          genre: "Unknown",
+          energy: 0.7,
+          danceability: 0.75,
+        },
+        video: {
+          title: "Analyzed Track",
+          channel: "Unknown",
+          duration: "Unknown",
+          thumbnail: ""
+        }
+      }
+      
       setResult(analysisResult)
-    } catch {
-      setError("Failed to analyze the video. Please try again.")
+    } catch (err: any) {
+      setError(err.message || "Failed to analyze the audio")
+      console.error("[v0] Analyzer error:", err)
     } finally {
       setIsAnalyzing(false)
     }
