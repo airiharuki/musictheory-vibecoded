@@ -1,0 +1,20 @@
+[project]
+name = "harmonic-studio-backend"
+version = "0.1.0"
+description = "Audio processing backend for Harmonic Studio"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn[standard]==0.24.0",
+    "yt-dlp==2024.3.10",
+    "librosa==0.10.0",
+    "numpy==1.24.3",
+    "scipy==1.11.3",
+    "pydub==0.25.1",
+    "python-multipart==0.0.6",
+    "pydantic==2.5.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
