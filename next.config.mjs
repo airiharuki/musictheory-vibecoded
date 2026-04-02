@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  basePath: '/musictheory-vibecoded',
-  assetPrefix: '/musictheory-vibecoded/',
-};
+const nextConfig = {};
 
-module.exports = nextConfig;
+export default nextConfig;

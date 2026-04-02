@@ -48,29 +48,17 @@ Finally, a Circle of Fifths that doesn't look like it was made in MS Paint in 20
 - 🌙 Inner ring for minor keys, outer ring for major keys
 - 💡 Actually tells you useful stuff like harmonic relationships and mixing tips
 
-### 📺 YouTube Analyzer
+### 📺 Audio Analyzer (Powered by Essentia.js)
 
-Paste a YouTube link, get the key, BPM, and time signature. That's it. That's the feature.
+Upload an audio file and get real-time analysis of BPM, musical key, and time signature using industry-standard Essentia audio processing library.
 
-- 🖼️ Shows the video thumbnail so you know you got the right track
-- 🎹 Displays Camelot notation alongside musical notation (for the DJ homies)
-- 📊 Confidence meters so you know how sure we are
-- ⏩ Half-time and double-time BPM because sometimes you need to know both
-- 📋 One-click copy for all detected values
+- 🎵 Real audio analysis (not simulated) using Essentia.js RhythmExtractor and KeyExtractor algorithms
+- 📊 Confidence meters show how certain the detection is (BPM and key confidence)
+- 🎹 Detects musical key with accuracy
+- ⏱️ Automatic BPM and tempo detection
+- 🎚️ Works with any audio format your browser supports (MP3, WAV, OGG, FLAC)
 
-*Note: Currently uses simulated analysis. For production, you'd want to hook this up to a real audio analysis API.*
-
-### 🎵 Stem Splitter
-
-Upload or paste a link to any audio file and split it into individual stems. No more trying to isolate vocals manually or using sketchy online tools.
-
-- 🎙️ Splits audio into Vocals, Drums, Bass, and Other stems
-- 📤 Upload local files or grab audio from YouTube/SoundCloud links
-- 💾 Download stems individually or as a zip archive
-- 🎚️ Real-time processing with progress tracking
-- 📊 Visual waveform display for each stem
-
-*Uses industry-standard separation models (Demucs) for high-quality stems.*
+This replaced the simulated YouTube analyzer with real signal processing on your local machine.
 
 ### 🌓 It Looks Pretty Too™
 
@@ -91,6 +79,7 @@ Just clone it and run it. Or click the deploy link if there is one.
 - 🔊 Web Audio API (pure sine waves, chef's kiss)
 - 🎹 Homemade MIDI generator (no libraries, we built different™)
 - 💎 Glassmorphism everywhere (because 2024 called and we answered)
+- 🔍 Essentia.js for real-time audio analysis (BPM, key, time signature detection)
 
 ## 📦 How to Run This Locally
 
@@ -152,22 +141,13 @@ npm run dev
 3. Use the quick buttons to set it as your base or target key
 4. Read the tips on the side if you forgot your music theory classes 📚
 
-### Analyzing a Track
+### Analyzing Audio
 
 1. Go to the Analyzer page (click the tab in the header)
-2. Paste a YouTube URL 📺
-3. Wait for the magic ✨
-4. Copy whatever values you need
-5. Go back to Composer and use them
-
-### Splitting Stems
-
-1. Go to the Stem Splitter page
-2. Either upload an audio file or paste a YouTube/SoundCloud link 🎵
-3. Wait for processing (may take a minute depending on file size)
-4. Preview each stem in the player 🎧
-5. Download individual stems or grab them all as a zip 💾
-6. Use them in your DAW for remixing, sampling, or production
+2. Upload an audio file 📁
+3. Click "Analyze Audio" and wait for the real-time analysis ✨
+4. See BPM, musical key, and confidence metrics
+5. Use the results in your Composer or DAW
 
 ## 🎼 Why 432Hz Though?
 
@@ -217,7 +197,6 @@ Here's some stuff we'd love help with:
 - [ ] 🎹 Chord inversions (so you can make it sound fancy)
 - [ ] 🎷 9th, 11th, 13th chords (jazz things)
 - [ ] 🎚️ Different octaves for MIDI export
-- [ ] 🎵 Better stem separation models or GPU acceleration for faster processing
 - [ ] 🔌 Real YouTube audio analysis integration (Essentia.js, ACRCloud, etc.)
 - [ ] ⌨️ Keyboard shortcuts for power users
 - [ ] 💾 Save/load progressions to local storage
@@ -252,7 +231,7 @@ Thanks to everyone who's helped make this thing better:
 - 📱 Mobile browsers can be weird with the audio (blame Apple)
 - 🔊 MIDI velocity is locked at 100 (all notes same volume)
 - 🎲 If you lock the scale to something with like 5 notes, random can get repetitive
-- 📺 YouTube analyzer is simulated (needs real API for production)
+- 📊 Essentia.js audio analysis works best with files 5+ seconds long (needs enough data to detect BPM reliably)
 - 🎵 Stem splitter quality depends on audio quality and length (longer files = better separation)
 - ⏱️ Stem processing can be slow on large files without GPU acceleration
 
