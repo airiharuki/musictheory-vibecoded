@@ -60,6 +60,18 @@ Paste a YouTube link, get the key, BPM, and time signature. That's it. That's th
 
 *Note: Currently uses simulated analysis. For production, you'd want to hook this up to a real audio analysis API.*
 
+### 🎵 Stem Splitter
+
+Upload or paste a link to any audio file and split it into individual stems. No more trying to isolate vocals manually or using sketchy online tools.
+
+- 🎙️ Splits audio into Vocals, Drums, Bass, and Other stems
+- 📤 Upload local files or grab audio from YouTube/SoundCloud links
+- 💾 Download stems individually or as a zip archive
+- 🎚️ Real-time processing with progress tracking
+- 📊 Visual waveform display for each stem
+
+*Uses industry-standard separation models (Demucs) for high-quality stems.*
+
 ### 🌓 It Looks Pretty Too™
 
 - 🌙 Dark mode for late night sessions (galaxy vibes™ with that indigo-purple-pink gradient)
@@ -148,6 +160,15 @@ npm run dev
 4. Copy whatever values you need
 5. Go back to Composer and use them
 
+### Splitting Stems
+
+1. Go to the Stem Splitter page
+2. Either upload an audio file or paste a YouTube/SoundCloud link 🎵
+3. Wait for processing (may take a minute depending on file size)
+4. Preview each stem in the player 🎧
+5. Download individual stems or grab them all as a zip 💾
+6. Use them in your DAW for remixing, sampling, or production
+
 ## 🎼 Why 432Hz Though?
 
 Because some people think it sounds more "natural" or whatever. Honestly, it's just different from the standard 440Hz. You can change it in the code if you want:
@@ -196,6 +217,7 @@ Here's some stuff we'd love help with:
 - [ ] 🎹 Chord inversions (so you can make it sound fancy)
 - [ ] 🎷 9th, 11th, 13th chords (jazz things)
 - [ ] 🎚️ Different octaves for MIDI export
+- [ ] 🎵 Better stem separation models or GPU acceleration for faster processing
 - [ ] 🔌 Real YouTube audio analysis integration (Essentia.js, ACRCloud, etc.)
 - [ ] ⌨️ Keyboard shortcuts for power users
 - [ ] 💾 Save/load progressions to local storage
@@ -231,6 +253,8 @@ Thanks to everyone who's helped make this thing better:
 - 🔊 MIDI velocity is locked at 100 (all notes same volume)
 - 🎲 If you lock the scale to something with like 5 notes, random can get repetitive
 - 📺 YouTube analyzer is simulated (needs real API for production)
+- 🎵 Stem splitter quality depends on audio quality and length (longer files = better separation)
+- ⏱️ Stem processing can be slow on large files without GPU acceleration
 
 None of it's dealbreaker stuff, just FYI.
 
